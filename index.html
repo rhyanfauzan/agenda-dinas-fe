@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/iconpupr.png" />
+    <title>New PU Website | Home</title>
+    <!-- Bootrstrap 5 CDN  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <link href="dist/css/style.css" rel="stylesheet" />
+    <link href="dist/css/custom.css" rel="stylesheet" />
+    <link href="assets/libs/fullcalendar/dist/fullcalendar.min.css" rel="stylesheet" />
+    <link href="assets/extra-libs/calendar/calendar.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="main-wrapper" id="main-wrapper">
+      <!-- ============================================================== -->
+      <!-- Preloader - style you can find in spinners.css -->
+      <!-- ============================================================== -->
+      <div class="preloader">
+        <div class="loader">
+          <div class="loader__figure"></div>
+          <p class="loader__label">New PU</p>
+        </div>
+      </div>
+
+      <!-- Navbar  -->
+      <div class="fixed-top">
+        <nav class="bg-color-main d-flex justify-content-between navbar navbar-expand-lg" >
+            <div>
+              <a href="#" class="">
+                <img class="logo m-l-15" src="https://binamarga.pu.go.id/assets/2021/images/logopu1.png" alt="logo" />
+              </a>
+            </div>
+            <div>
+              <ul class="collapse navbar-collapse topnav-link ">
+                <li><a href="#" class="nav-link nav-link-active">Home</a></li>
+                <li><a href="#" class="nav-link">Visi & Misi</a></li>
+                <li><a href="#" class="nav-link">Kegiatan Dinas</a></li>
+                <li><a href="#" class="nav-link">SPBE</a></li>
+                <li><a href="#" class="nav-link">About</a></li>
+              </ul>
+            </div>
+            <!-- Button #1 -->
+            <div class="box-1 m-r-15">
+              <div type="button" class="btn btn-one" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Buku Tamu
+              </div>
+            </div>
+        </nav>
+      </div>
+      <br />
+
+      <!-- Modal Pop up Form -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Buku Tamu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body color-main">
+              <div class="row">
+                <div class="col">
+                  <form>
+                    <div class="mb-3">
+                      <input type="date" placeholder="Tanggal" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                      <input type="text" placeholder="Nama" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                      <input type="text" placeholder="Alamat" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                      <select class="" aria-label="Keperluan">
+                      <option selected>Keperluan</option>
+                      <option value="1">Rapat</option>
+                      <option value="2">Koordinasi</option>
+                      </select>
+                    </div>
+                    
+                    
+                  </form>
+                </div>
+                <div class="col">
+                  <form>
+                    <div class="mb-3">
+                      <input type="number" required placeholder="No.Telp" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                      <input type="text" required placeholder="Bagian yang ditemui" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                      <input type="text" placeholder="Pegawai" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                      <select class="" aria-label="Keperluan (Bidang)">
+                      <option selected>Keperluan (Bidang)</option>
+                      <option value="1">Bidang 1</option>
+                      <option value="2">Bidang 2</option>
+                      <option value="3">Bidang 3</option>
+                      <option value="4">Bidang 4</option>
+                      </select>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="button btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="submit" class="button button-primary">Simpan</button>
+            </div>
+          </div>
+        </div>
+      </div>  
+
+      <!-- End Navbar  -->
+
+      <!--Slider-->
+      <div class="slider-banner">
+        <input type="radio" name="slider" id="slideA" checked />
+        <div class="slider-image">
+          <img src="https://pu.go.id/assets/front/img/sliders/1647937948.jpg" />
+          <span class="nav">
+            <label for="slideC" class="prev">&lt;</label>
+            <label for="slideB" class="next">&gt;</label>
+          </span>
+        </div>
+
+        <input type="radio" name="slider" id="slideB" />
+        <div class="slider-image">
+          <img src="https://img.freepik.com/free-vector/abstract-yellow-black-wide-banner-design_1017-30890.jpg?w=2000" />
+          <span class="nav">
+            <label for="slideA" class="prev">&lt;</label>
+            <label for="slideC" class="next">&gt;</label>
+          </span>
+        </div>
+
+        <input type="radio" name="slider" id="slideC" />
+        <div class="slider-image">
+          <img src="https://image.shutterstock.com/image-vector/wide-banner-dark-blue-gradient-260nw-1706841358.jpg" />
+          <span class="nav">
+            <label for="slideB" class="prev">&lt;</label>
+            <label for="slideA" class="next">&gt;</label>
+          </span>
+        </div>
+
+        <div class="bullet-nav">
+          <label for="slideA" id="bulletA" class="bullet"></label>
+          <label for="slideB" id="bulletB" class="bullet"></label>
+          <label for="slideC" id="bulletC" class="bullet"></label>
+        </div>
+      </div>
+      <!-- end slider  -->
+
+      <!-- Content    -->
+
+      <div class="row justify-content-center my-5">
+        <div class="col-10">
+          <h4>Sekilas Tentang Kami</h4>
+        </div>
+        <div class="col-10">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+            Aldus PageMaker including versions of Lorem Ipsum.
+          </p>
+          <button class="btn button-primary">Selengkapnya</button>
+        </div>
+      </div>
+
+      <div class="row justify-content-center my-5">
+        <div class="col-10 text-center">
+          <h3>Visi & Misi</h3>
+        </div>
+        <div class="col-10">
+          <br>
+          <p>Visi Kementerian Pekerjaan Umum dan Perumahan Rakyat tahun 2015-2019 adalah:</p>
+          <h5>"TERWUJUDNYA INFRASTRUKTUR PEKERJAAN UMUM DAN PERUMAHAN RAKYAT YANG HANDAL DALAM MENDUKUNG INDONESIA YANG
+            BERDAULAT, MANDIRI, DAN BERKEPRIBADIAN BERLANDASKAN GOTONG ROYONG"</h5>
+          <p>
+            <br />Misi Kementerian Pekerjaan Umum dan Perumahan Rakyat yang merupakan rumusan upaya yang akan
+            dilaksanakan selama periode Renstra 2015 – 2019 dalam rangka mencapai visi serta mendukung upaya pencapaian
+            target pembangunan nasional, berdasarkan mandat yang diemban oleh Kementerian Pekerjaan Umum dan Perumahan
+            Rakyat sebagaimana yang tercantum di dalam Peraturan Pemerintah Nomor 165 Tahun 2014 tentang Penataan Tugas
+            dan Fungsi Kabinet Kerja, amanat RPJMN tahap ketiga serta perubahan kondisi lingkungan strategis yang
+            dinamis adalah sebagai berikut:
+            <br />
+            <ul>
+              <li>
+                Mempercepat pembangunan infrastruktur sumberdaya air termasuk sumber daya maritim untuk mendukung
+                ketahanan air, kedaulatan pangan, dan kedaulatan energi, guna menggerakkan sektor-sektor strategis ekonomi
+                domestik dalam rangka kemandirian ekonomi;
+              </li>
+              <li>
+                Mempercepat pembangunan infrastruktur jalan untuk mendukung konektivitas guna meningkatkan produktivitas,
+                efisiensi, dan pelayanan sistem logistik nasional bagi penguatan daya saing bangsa di lingkup global yang
+                berfokus pada keterpaduan konektivitas daratan dan maritim;
+              </li>
+              <li>
+                Mempercepat pembangunan infrastruktur permukiman dan perumahan rakyat untuk mendukung layanan
+                infrastruktur dasar yang layak dalam rangka mewujudkan kualitas hidup manusia Indonesia sejalan dengan
+                prinsip ‘infrastruktur untuk semua’;
+              </li>
+              <li>
+                Mempercepat pembangunan infrastruktur pekerjaan umum dan perumahan rakyat secara terpadu dari pinggiran
+                didukung industri konstruksi yang berkualitas untuk keseimbangan pembangunan antardaerah, terutama di
+                kawasan tertinggal, kawasan perbatasan, dan kawasan perdesaan, dalam kerangka NKRI;
+              </li>
+              <li>
+                Meningkatkan tata kelola sumber daya organisasi bidang pekerjaan umum dan perumahan rakyat yang meliputi
+                sumber daya manusia, pengendalian dan pengawasan, kesekertariatan serta penelitian dan pengembangan untuk
+                mendukung fungsi manajemen meliputi perencanaan yang terpadu, pengorganisasian yang efisien, pelaksanaan
+                yang tepat, dan pengawasan yang ketat.
+              </li>
+            </ul>
+          </p>
+        </div>
+      </div>
+
+      <!-- End Content    -->
+
+      <div class="page-wrapper">
+        <!-- ============================================================== -->
+        <!-- Container fluid scss in scafholding.scss -->
+        <!-- ============================================================== -->
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-lg-3">
+              <div class="card p-3">
+                <h5 class="color-main">Permintaan Data</h5>
+                <hr class="linehr">
+                <div class="d-flex justify-content-between mt-2">
+                  <span>Nama file</span>
+                  <a href="#">
+                    <img src="assets/icons/folder-download.svg" alt="Download" class="icdownload">
+                  </a>
+                </div>
+                <div class="d-flex justify-content-between mt-2">
+                  <span>Nama file</span>
+                  <a href="#">
+                    <img src="assets/icons/folder-download.svg" alt="Download" class="icdownload">
+                  </a>
+                </div>
+                <div class="d-flex justify-content-between mt-2">
+                  <span>Nama file</span>
+                  <a href="#">
+                    <img src="assets/icons/folder-download.svg" alt="Download" class="icdownload">
+                  </a>
+                </div>
+                <br>
+                <a href="#">Selengkapnya...</a>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="card">
+                <div class="">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="card-content b-l calender-sidebar">
+                        <div id="calendar"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- BEGIN MODAL -->
+          <div class="modal bottom-sheet" id="my-event">
+            <div class="modal-content">
+              <h4><strong>Change Event</strong></h4>
+              <div class="modal-body"></div>
+              <div class="modal-footer">
+                <button type="button" class="btn blue lighten-1 waves-effect modal-close">Close</button>
+                <button type="button" class="btn green lighten-1 save-event">Create event</button>
+                <button type="button" class="btn red lighten-2 delete-event">Delete</button>
+              </div>
+            </div>
+          </div>
+          <!-- Modal Add Category -->
+          <div class="modal" id="add-new-event">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title"><strong>Add</strong> a category</h4>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="row">
+                    <div class="col s12 m6">
+                      <label class="control-label">Category Name</label>
+                      <input
+                        class="form-control form-white"
+                        placeholder="Enter name"
+                        type="text"
+                        name="category-name"
+                      />
+                    </div>
+                    <div class="col s12 m6">
+                      <label class="control-label">Choose Category Color</label>
+                      <select
+                        class="form-control form-white"
+                        data-placeholder="Choose a color..."
+                        name="category-color"
+                      >
+                        <option value="green">Success</option>
+                        <option value="red">Danger</option>
+                        <option value="blue">Info</option>
+                        <option value="yellow">Warning</option>
+                      </select>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn blue darken-2 modal-close save-category">Save</button>
+                <button type="button" class="btn light-blue lighten-1 modal-close">Close</button>
+              </div>
+            </div>
+          </div>
+          <!-- END MODAL -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- Container fluid scss in scafholding.scss -->
+        <!-- ============================================================== -->
+      </div>
+
+
+      <a
+        href="#"
+        data-target="right-slide-out"
+        class="sidenav-trigger right-side-toggle btn-floating btn-large waves-effect waves-light bg-color-main"
+        ><i class="material-icons">settings</i></a
+      >
+      <aside class="right-sidebar">
+        <!-- Right Sidebar -->
+        <ul id="right-slide-out" class="sidenav right-sidenav">
+          <li>
+            <div class="row">
+              <!-- list  -->
+              <div class="col-12 mt-5">
+                <div class="card-content mt-5 mb-3">
+                  <h4 class="card-title mt-2">Agenda</h4>
+                </div>
+                <div class="card-content">
+                  <div class="row">
+                    <div class="col md-12">
+                      <div id="calendar-events" class="m-b-15">
+                        <div class="d-flex justify-content-between">
+                          <div class="calendar-events" data-class="purple">
+                            <i class="fa fa-circle purple-text m-r-10"></i>Rapat Kerja
+                          </div>
+                          <div class="align-self-center dateagenda">25-08-2022</div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                          <div class="calendar-events" data-class="green">
+                            <i class="fa fa-circle green-text m-r-10"></i>Pertemuan Dinas
+                          </div>
+                          <div class="align-self-center dateagenda">01-09-2022</div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                          <div class="calendar-events" data-class="red">
+                            <i class="fa fa-circle red-text m-r-10"></i>Kordinasi Lapangan
+                          </div>
+                          <div class="align-self-center dateagenda">05-09-2022</div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                          <div class="calendar-events" data-class="yellow">
+                            <i class="fa fa-circle yellow-text m-r-10"></i>Rapat Tahunan
+                          </div>
+                          <div class="align-self-center dateagenda">30-09-2022</div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                          <div class="m-l-10 mt-3" >
+                            <i class="fa fa-arrow-circle-right blue-text m-r-10"></i>
+                            <a href="#">Selengkapnya..</a>
+                          </div>
+                          
+                        </div>
+
+                      </div>
+
+                      <!-- checkbox -->
+                      <!-- <p>
+                        <label class="m-l-15">
+                          <input type="checkbox" id="drop-remove" />
+                          <span>Remove after drop</span>
+                        </label>
+                      </p> -->
+                      <!-- <a href="#add-new-event" class="btn light-blue lighten-1 modal-trigger m-t-10 m-l-10">
+                        <i class="ti-plus font-12"></i> Add New Event
+                      </a> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Setting -->
+              <div id="settings" class="col-12">
+                <div class="m-t-10 mt-5">
+                  <h6 class="font-medium">Layout Settings</h6>
+                  <ul class="m-t-15">
+                    <li class="m-b-10">
+                      <label>
+                        <input type="checkbox" name="theme-view" id="theme-view" />
+                        <span>Dark Theme</span>
+                      </label>
+                    </li>
+                    <li class="m-b-10">
+                      <label>
+                        <input type="checkbox" name="boxed-layout" id="boxed-layout" />
+                        <span>Boxed Layout</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </aside>
+      <div class="chat-windows"></div>
+      <!-- ============================================================== -->
+      <!-- Right Sidebar -->
+      <!-- ============================================================== -->
+    </div>
+
+    <footer class="center-align bg-color-main color-white py-4">Copyright PU 2022 <a href="#">Website PU</a>.</footer>
+
+    <!-- ============================================================== -->
+    <!-- All Required js -->
+    <!-- ============================================================== -->
+    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="dist/js/materialize.min.js"></script>
+    <script src="assets/extra-libs/taskboard/js/jquery.ui.touch-punch-improved.js"></script>
+    <script src="assets/extra-libs/taskboard/js/jquery-ui.min.js"></script>
+    <script src="assets/libs/perfect-scrollbar/dist/js/perfect-scrollbar.jquery.min.js"></script>
+    <!-- ============================================================== -->
+    <!-- Apps -->
+    <!-- ============================================================== -->
+    <script src="dist/js/app.js"></script>
+    <script src="dist/js/app.init.horizontal-fullwidth.js"></script>
+    <script src="dist/js/app-style-switcher.js"></script>
+    <!-- ============================================================== -->
+    <!-- Custom js -->
+    <!-- ============================================================== -->
+    <script src="dist/js/custom.min.js"></script>
+    <!-- ============================================================== -->
+    <!-- This page plugin js -->
+    <!-- ============================================================== -->
+    <script src="assets/libs/moment/min/moment.min.js"></script>
+    <script src="assets/libs/fullcalendar/dist/fullcalendar.min.js"></script>
+    <script src="dist/js/pages/calendar/cal-init.js"></script>
+    <link href="dist/js/custom.js" rel="stylesheet" />
+
+  </body>
+</html>
