@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/iconpupr.png" />
-    <title>New PU Website | Home</title>
+    <title>New PU Website | Visi & Misi</title>
     <!-- Bootrstrap 5 CDN  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -37,8 +37,8 @@
             </div>
             <div>
               <ul class="collapse navbar-collapse topnav-link ">
-                <li><a href="#" class="nav-link nav-link-active">Home</a></li>
-                <li><a href="#" class="nav-link">Visi & Misi</a></li>
+                <li><a href="#" class="nav-link ">Home</a></li>
+                <li><a href="#" class="nav-link nav-link-active">Visi & Misi</a></li>
                 <li><a href="#" class="nav-link">Agenda</a></li>
                 <li><a href="#" class="nav-link">SPBE</a></li>
                 <li><a href="#" class="nav-link">About</a></li>
@@ -120,61 +120,9 @@
 
       <!-- End Navbar  -->
 
-      <!--Slider-->
-      <div class="slider-banner">
-        <input type="radio" name="slider" id="slideA" checked />
-        <div class="slider-image">
-          <img src="https://pu.go.id/assets/front/img/sliders/1647937948.jpg" />
-          <span class="nav">
-            <label for="slideC" class="prev">&lt;</label>
-            <label for="slideB" class="next">&gt;</label>
-          </span>
-        </div>
-
-        <input type="radio" name="slider" id="slideB" />
-        <div class="slider-image">
-          <img src="https://img.freepik.com/free-vector/abstract-yellow-black-wide-banner-design_1017-30890.jpg?w=2000" />
-          <span class="nav">
-            <label for="slideA" class="prev">&lt;</label>
-            <label for="slideC" class="next">&gt;</label>
-          </span>
-        </div>
-
-        <input type="radio" name="slider" id="slideC" />
-        <div class="slider-image">
-          <img src="https://image.shutterstock.com/image-vector/wide-banner-dark-blue-gradient-260nw-1706841358.jpg" />
-          <span class="nav">
-            <label for="slideB" class="prev">&lt;</label>
-            <label for="slideA" class="next">&gt;</label>
-          </span>
-        </div>
-
-        <div class="bullet-nav">
-          <label for="slideA" id="bulletA" class="bullet"></label>
-          <label for="slideB" id="bulletB" class="bullet"></label>
-          <label for="slideC" id="bulletC" class="bullet"></label>
-        </div>
-      </div>
-      <!-- end slider  -->
-
       <!-- Content    -->
 
-      <div class="row justify-content-center my-5">
-        <div class="col-10">
-          <h4>Sekilas Tentang Kami</h4>
-        </div>
-        <div class="col-10">
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
-            Aldus PageMaker including versions of Lorem Ipsum.
-          </p>
-          <button class="btn button-primary">Selengkapnya</button>
-        </div>
-      </div>
+      <br><br><br>
 
       <div class="row justify-content-center my-5">
         <div class="col-10 text-center">
@@ -226,112 +174,6 @@
       </div>
 
       <!-- End Content    -->
-
-      <div class="page-wrapper">
-        <!-- ============================================================== -->
-        <!-- Container fluid scss in scafholding.scss -->
-        <!-- ============================================================== -->
-        <div class="container-fluid">
-          <div class="row justify-content-center">
-            <div class="col-lg-3">
-              <div class="card p-3">
-                <h5 class="color-main">Permintaan Data</h5>
-                <hr class="linehr">
-                <div class="d-flex justify-content-between mt-2">
-                  <span>Nama file</span>
-                  <a href="#">
-                    <img src="assets/icons/folder-download.svg" alt="Download" class="icdownload">
-                  </a>
-                </div>
-                <div class="d-flex justify-content-between mt-2">
-                  <span>Nama file</span>
-                  <a href="#">
-                    <img src="assets/icons/folder-download.svg" alt="Download" class="icdownload">
-                  </a>
-                </div>
-                <div class="d-flex justify-content-between mt-2">
-                  <span>Nama file</span>
-                  <a href="#">
-                    <img src="assets/icons/folder-download.svg" alt="Download" class="icdownload">
-                  </a>
-                </div>
-                <br>
-                <a href="#">Selengkapnya...</a>
-              </div>
-            </div>
-            <div class="col-lg-7">
-              <div class="card">
-                <div class="">
-                  <div class="row">
-                    <div class="col-lg-12">
-                      <div class="card-content b-l calender-sidebar">
-                        <div id="calendar"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- BEGIN MODAL -->
-          <div class="modal bottom-sheet" id="my-event">
-            <div class="modal-content">
-              <h4><strong>Change Event</strong></h4>
-              <div class="modal-body"></div>
-              <div class="modal-footer">
-                <button type="button" class="btn blue lighten-1 waves-effect modal-close">Close</button>
-                <button type="button" class="btn green lighten-1 save-event">Create event</button>
-                <button type="button" class="btn red lighten-2 delete-event">Delete</button>
-              </div>
-            </div>
-          </div>
-          <!-- Modal Add Category -->
-          <div class="modal" id="add-new-event">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h4 class="modal-title"><strong>Add</strong> a category</h4>
-              </div>
-              <div class="modal-body">
-                <form>
-                  <div class="row">
-                    <div class="col s12 m6">
-                      <label class="control-label">Category Name</label>
-                      <input
-                        class="form-control form-white"
-                        placeholder="Enter name"
-                        type="text"
-                        name="category-name"
-                      />
-                    </div>
-                    <div class="col s12 m6">
-                      <label class="control-label">Choose Category Color</label>
-                      <select
-                        class="form-control form-white"
-                        data-placeholder="Choose a color..."
-                        name="category-color"
-                      >
-                        <option value="green">Success</option>
-                        <option value="red">Danger</option>
-                        <option value="blue">Info</option>
-                        <option value="yellow">Warning</option>
-                      </select>
-                    </div>
-                  </div>
-                </form>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn blue darken-2 modal-close save-category">Save</button>
-                <button type="button" class="btn light-blue lighten-1 modal-close">Close</button>
-              </div>
-            </div>
-          </div>
-          <!-- END MODAL -->
-        </div>
-        <!-- ============================================================== -->
-        <!-- Container fluid scss in scafholding.scss -->
-        <!-- ============================================================== -->
-      </div>
-
 
       <a
         href="#"
