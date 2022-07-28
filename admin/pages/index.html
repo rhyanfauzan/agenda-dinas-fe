@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootsrap 5  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
+
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/iconpupr.png" />
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <title>Dashboard | Admin</title>
+    <!-- This page CSS -->
+    <link href="../../dist/css/icons/crypto-icons/cryptocoins.css" rel="stylesheet" />
+    <link href="../../dist/css/pages/data-table.css" rel="stylesheet" />
+    <link href="../../assets/extra-libs/c3/c3.min.css" rel="stylesheet" />
+    <link href="../../dist/css/style.css" rel="stylesheet" />
+    <link href="../../dist/css/custom.css" rel="stylesheet" />
+    <link href="../../dist/css/pages/dashboard3.css" rel="stylesheet" />
+
+  </head>
+  <body>
+    <div class="main-wrapper" id="main-wrapper">
+      <div class="preloader">
+        <div class="loader">
+          <div class="loader__figure"></div>
+          <p class="loader__label">Admin</p>
+        </div>
+      </div>
+      <header class="topbar">
+        <nav class="bg-color-white">
+          <div class="nav-wrapper ">
+            <a href="#" class="">
+              <span class="icon">
+                <img class="light-logo" src="../../assets/images/logopupr.png" alt="logo" height="40px"/>
+              </span>
+            </a>
+
+            <ul class="right">
+              <li class="lang-dropdown"></li>
+              <li>
+                <a class="dropdown-trigger" href="javascript: void(0);" data-target="user_dropdown"
+                  ><img src="../../assets/images/users/user.png" alt="user" class="circle profile-pic"
+                /></a>
+                <ul id="user_dropdown" class="mailbox dropdown-content dropdown-user">
+                  <li>
+                    <div class="dw-user-box">
+                      <div class="u-img"><img src="../../assets/images/users/3.png" alt="user" /></div>
+                      <div class="u-text">
+                        <h4>Ryan Fauzan</h4>
+                        <p>ryan@gmail.com</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li role="separator" class="divider"></li>
+                  <!-- <li>
+                    <a href="#"><i class="material-icons">account_circle</i> My Profile</a>
+                  </li> -->
+                  <li>
+                    <a href="#"><i class="material-icons">power_settings_new</i> Logout</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <!-- ============================================================== -->
+            <!-- Right topbar icon scss in header.scss -->
+            <!-- ============================================================== -->
+          </div>
+        </nav>
+      </header>
+      <aside class="left-sidebar">
+        <ul id="slide-out" class="sidenav">
+          <li class="side-wrap">
+            <ul class="collapsible">
+              <li class="small-cap"><span class="hide-menu">PERSONAL</span></li>
+                <li>
+                    <a href="index.html"
+                    ><span class="iconify mb-1 m-r-10" data-icon="mdi:view-dashboard"></span>Dashboard</a
+                    >
+                </li>
+                <li>
+                    <a href="agenda-admin.html"
+                    ><span class="iconify mb-1 m-r-10" data-icon="mdi:calendar-check"></span></span>Kegiatan Dinas</a
+                    >
+                </li>
+                <li>
+                    <a href="permintaan-admin.html"
+                    ><span class="iconify mb-1 m-r-10" data-icon="mdi:file-arrow-left-right-outline"></span></span>Permintaan Data</a
+                    >
+                </li>
+                <li>
+                    <a href="pengelolaan-admin.html"
+                    ><span class="iconify mb-1 m-r-10" data-icon="mdi:clipboard-edit-outline"></span></span>Pengelolaan</a
+                    >
+                </li>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </aside>
+      <div class="page-wrapper">
+        <!-- Akan datang  -->
+        <div class="mb-3 mt-5">
+            <h3 class="font-medium m-b-0 orange-text">Akan Datang <span class="iconify" data-icon="mdi:timeline-outline"></span></h3>
+            
+        </div>
+        <div class="container-fluid">
+          <table class="table table-hover table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">Tanggal</th>
+                <th scope="col">Nama Kegiatan</th>
+                <th scope="col">Kategori</th>
+                <th scope="col">Aksi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row">17-08-2022</td>
+                <td>Pertemuan Pejabat Daerah</td>
+                <td>Koordinasi</td>
+                <td>
+                    <a href="#" >
+                        <span class="iconify" data-icon="mdi:share" style="color: #00a86b;" data-width="30" data-height="30"></span>
+                    </a>
+                </td>
+              </tr>
+              <tr>
+                <td scope="row">30-08-2022</td>
+                <td>Rapat koordinasi</td>
+                <td>Rapat</td>
+                <td>
+                    <a href="#" >
+                        <span class="iconify" data-icon="mdi:share" style="color: #00a86b;" data-width="30" data-height="30"></span>
+                    </a>
+                </td>
+              </tr>
+              <tr>
+                <td scope="row">2-09-2022</td>
+                <td>Undangan Sosialisasi</td>
+                <td>Kegiatan Dinas</td>
+                <td>
+                    <a href="#" >
+                        <span class="iconify" data-icon="mdi:share" style="color: #00a86b;" data-width="30" data-height="30"></span>
+                    </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+            <p class="m-0 p-0 grey-text">Menampilkan 3 dari 3</p>
+            <a href="#" class="mt-2">Load more..</a>
+
+        <div class="mb-3 mt-5">
+              <h3 class="font-medium m-b-0 green-text">Telah Selesai <span class="iconify" data-icon="mdi:timeline-check-outline"></span></h3>
+          </div>
+        <!-- Selesai  -->
+        <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Tanggal</th>
+                <th scope="col">Nama Kegiatan</th>
+                <th scope="col">Kategori</th>
+                <th scope="col">Aksi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row">20-07-2022</td>
+                <td>Pertemuan Pejabat Daerah</td>
+                <td>Koordinasi</td>
+                <td>
+                    <a href="#" >
+                        <span class="iconify" data-icon="mdi:share" style="color: #00a86b;" data-width="30" data-height="30"></span>
+                    </a>
+                </td>
+              </tr>
+              <tr>
+                <td scope="row">02-07-2022</td>
+                <td>Rapat koordinasi</td>
+                <td>Rapat</td>
+                <td>
+                    <a href="#" >
+                        <span class="iconify" data-icon="mdi:share" style="color: #00a86b;" data-width="30" data-height="30"></span>
+                    </a>
+                </td>
+              </tr>
+              <tr>
+                <td scope="row">12-06-2022</td>
+                <td>Undangan Sosialisasi</td>
+                <td>Kegiatan Dinas</td>
+                <td>
+                    <a href="#" >
+                        <span class="iconify" data-icon="mdi:share" style="color: #00a86b;" data-width="30" data-height="30"></span>
+                    </a>
+                </td>
+              </tr>
+              <tr>
+                <td scope="row">29-05-2022</td>
+                <td>Rapat Daerah</td>
+                <td>Rapat</td>
+                <td>
+                    <a href="#" >
+                        <span class="iconify" data-icon="mdi:share" style="color: #00a86b;" data-width="30" data-height="30"></span>
+                    </a>
+                </td>
+              </tr>
+              <tr>
+                <td scope="row">11-05-2022</td>
+                <td>Sosialisasi</td>
+                <td>Kegiatan Dinas</td>
+                <td>
+                    <a href="#" >
+                        <span class="iconify" data-icon="mdi:share" style="color: #00a86b;" data-width="30" data-height="30"></span>
+                    </a>
+                </td>
+              </tr>
+            </tbody>
+        </table>
+            <p class="m-0 p-0 grey-text">Menampilkan 5 dari 29</p>
+            <a href="#" class="mt-2">Load more..</a>
+        </div>
+
+        <br><br><br><br>
+
+        <footer class="center-align m-b-30 m-l-15 m-r-15">
+          Copyright New PU 2022.
+        </footer>
+      </div>
+
+    </div>
+    <!-- ============================================================== -->
+    <!-- All Required js -->
+    <!-- ============================================================== -->
+    <script src="../../assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="../../dist/js/materialize.min.js"></script>
+    <script src="../../assets/libs/perfect-scrollbar/dist/js/perfect-scrollbar.jquery.min.js"></script>
+    <!-- ============================================================== -->
+    <!-- Apps -->
+    <!-- ============================================================== -->
+    <script src="../../dist/js/app.js"></script>
+    <script src="../../dist/js/app.init.horizontal.js"></script>
+    <script src="../../dist/js/app-style-switcher.horizontal.js"></script>
+    <!-- ============================================================== -->
+    <!-- Custom js -->
+    <!-- ============================================================== -->
+    <script src="../../dist/js/custom.min.js"></script>
+    <!-- ============================================================== -->
+    <!-- This page plugin js -->
+    <!-- ============================================================== -->
+    <!--c3 JavaScript -->
+    <script src="../../assets/extra-libs/c3/d3.min.js"></script>
+    <script src="../../assets/extra-libs/c3/c3.min.js"></script>
+    <!-- <script src="../../assets/libs/datatables/media/js/jquery.dataTables.min.js"></script> -->
+    <script src="../../assets/extra-libs/DataTables/jquery.dataTables.min.js"></script>
+    <script src="../../dist/js/pages/dashboards/dashboard3.js"></script>
+    <script>
+      /****************************************
+       *       Basic Table                   *
+       ****************************************/
+      $("#zero_config").DataTable();
+    </script>
+  </body>
+</html>

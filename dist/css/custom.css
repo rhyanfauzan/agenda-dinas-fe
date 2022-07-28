@@ -416,3 +416,9 @@ input#slideC:checked ~ .bullet-nav label#bulletC {
 #border-pagination li a:hover:not(.active) {
   background: #ddd;
 }
+
+.tablebtn:hover {
+  color: #9dbfaf;
+  width: 40px;
+  height: 40px;
+}
