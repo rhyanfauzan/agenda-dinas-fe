@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Bootsrap 5  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/iconpupr.png" />
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
-    <title>Dashboard | Admin</title>
+    <title>Permintaan Data | Admin</title>
     <!-- This page CSS -->
     <link href="../../dist/css/icons/crypto-icons/cryptocoins.css" rel="stylesheet" />
     <link href="../../dist/css/pages/data-table.css" rel="stylesheet" />
@@ -73,7 +74,7 @@
           <li class="side-wrap">
             <ul class="collapsible">
               <li class="small-cap"><span class="hide-menu"></span></li>
-                <li class="li-active">
+                <li >
                     <a href="index.html"
                     ><span class="iconify mb-1 m-r-10" data-icon="mdi:view-dashboard"></span>Dashboard</a
                     >
@@ -87,7 +88,7 @@
                       </ul>
                   </div>
                 </li>
-                <li >
+                <li class="li-active">
                     <a href="permintaan-admin.html"
                     ><span class="iconify mb-1 m-r-10" data-icon="mdi:file-arrow-left-right-outline"></span>Permintaan Data</a
                     >
@@ -103,126 +104,132 @@
         </ul>
       </aside>
       <div class="page-wrapper">
-        <!-- Akan datang  -->
-        <div class="mb-3 mt-5">
-            <h3 class="font-medium m-b-0 orange-text">Akan Datang <span class="iconify" data-icon="mdi:timeline-outline"></span></h3>
-            
+        <div class="d-flex my-5 justify-content-between">
+          <!-- title  -->
+          <span class="d-flex align-items-center">
+            <h3 class="font-medium "><span class="iconify" data-icon="mdi:file-arrow-left-right"></span> Permintaan Data </h3>
+          </span>
+
+          <!-- Button trigger modal -->
+          <button type="button" class="button button-green" data-icon="mdi:square-edit-outline" data-width="25" data-height="25" data-bs-toggle="modal" data-bs-target="#tambahdatamodal">
+            Tambah Data
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="tambahdatamodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel"><span class="iconify" data-icon="mdi:note-plus"></span> Tambah Data (Upload)</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col">
+                      <form>
+                        <div class="mb-3">
+                          <input type="textarea" class="form-control" placeholder="Nama File">
+                        </div>
+                        <div class="mb-3">
+                          <input type="file" class="form-control" placeholder="File">
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="button button-grey" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="button button-green">Simpan</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
         <div class="container-fluid">
           <table class="table table-hover table-bordered">
             <thead>
               <tr>
-                <th scope="col">Tanggal</th>
-                <th scope="col">Nama Kegiatan</th>
-                <th scope="col">Kategori</th>
-                <th scope="col">Aksi</th>
+                <th scope="col">No</th>
+                <th scope="col">Nama File</th>
+                <th scope="col">View</th>
+                <th scope="col">Delete</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td scope="row">17-08-2022</td>
-                <td>Pertemuan Pejabat Daerah</td>
-                <td>Koordinasi</td>
+                <td scope="row">1</td>
+                <td>Data pegawai.clsx</td>
                 <td>
                     <a href="#" >
-                        <span class="iconify" data-icon="mdi:share" style="color: #00a86b;" data-width="30" data-height="30"></span>
+                        <span class="iconify blue-text" data-icon="mdi:file-cloud" data-width="25" data-height="25"></span>
                     </a>
+                </td>
+                <td>
+                  <!-- Button trigger modal -->
+                  <span type="button" class="iconify red-text" data-icon="mdi:delete-outline" data-width="25" data-height="25" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Delete
+                  </span>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                            <span class="iconify" data-icon="mdi:delete-circle-outline"></span> Warning!</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          apakah Anda yakin akan menghapus ini ?
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="button button-grey" data-bs-dismiss="modal">Batal</button>
+                          <button type="button" class="button button-red">Delete</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </td>
               </tr>
               <tr>
-                <td scope="row">30-08-2022</td>
-                <td>Rapat koordinasi</td>
-                <td>Rapat</td>
+                <td scope="row">2</td>
+                <td>Dokumen dinas.pdf</td>
                 <td>
                     <a href="#" >
-                        <span class="iconify" data-icon="mdi:share" style="color: #00a86b;" data-width="30" data-height="30"></span>
+                        <span class="iconify blue-text" data-icon="mdi:file-cloud" data-width="25" data-height="25"></span>
                     </a>
                 </td>
-              </tr>
-              <tr>
-                <td scope="row">2-09-2022</td>
-                <td>Undangan Sosialisasi</td>
-                <td>Kegiatan Dinas</td>
                 <td>
-                    <a href="#" >
-                        <span class="iconify" data-icon="mdi:share" style="color: #00a86b;" data-width="30" data-height="30"></span>
-                    </a>
+                  <!-- Button trigger modal -->
+                  <span type="button" class="iconify red-text" data-icon="mdi:delete-outline" data-width="25" data-height="25" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Delete
+                  </span>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                            <span class="iconify" data-icon="mdi:delete-circle-outline"></span> Warning!</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          apakah Anda yakin akan menghapus ini ?
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="button button-grey" data-bs-dismiss="modal">Batal</button>
+                          <button type="button" class="button button-red">Delete</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </td>
               </tr>
             </tbody>
           </table>
-            <p class="m-0 p-0 grey-text">Menampilkan 3 dari 3</p>
+            <p class="m-0 p-0 grey-text">Menampilkan 2 dari 2</p>
             <a href="#" class="mt-2">Load more..</a>
-
-        <div class="mb-3 mt-5">
-              <h3 class="font-medium m-b-0 green-text">Telah Selesai <span class="iconify" data-icon="mdi:timeline-check-outline"></span></h3>
-          </div>
-        <!-- Selesai  -->
-        <table class="table table-hover">
-            <thead>
-              <tr>
-                <th scope="col">Tanggal</th>
-                <th scope="col">Nama Kegiatan</th>
-                <th scope="col">Kategori</th>
-                <th scope="col">Aksi</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td scope="row">20-07-2022</td>
-                <td>Pertemuan Pejabat Daerah</td>
-                <td>Koordinasi</td>
-                <td>
-                    <a href="#" >
-                        <span class="iconify" data-icon="mdi:share" style="color: #00a86b;" data-width="30" data-height="30"></span>
-                    </a>
-                </td>
-              </tr>
-              <tr>
-                <td scope="row">02-07-2022</td>
-                <td>Rapat koordinasi</td>
-                <td>Rapat</td>
-                <td>
-                    <a href="#" >
-                        <span class="iconify" data-icon="mdi:share" style="color: #00a86b;" data-width="30" data-height="30"></span>
-                    </a>
-                </td>
-              </tr>
-              <tr>
-                <td scope="row">12-06-2022</td>
-                <td>Undangan Sosialisasi</td>
-                <td>Kegiatan Dinas</td>
-                <td>
-                    <a href="#" >
-                        <span class="iconify" data-icon="mdi:share" style="color: #00a86b;" data-width="30" data-height="30"></span>
-                    </a>
-                </td>
-              </tr>
-              <tr>
-                <td scope="row">29-05-2022</td>
-                <td>Rapat Daerah</td>
-                <td>Rapat</td>
-                <td>
-                    <a href="#" >
-                        <span class="iconify" data-icon="mdi:share" style="color: #00a86b;" data-width="30" data-height="30"></span>
-                    </a>
-                </td>
-              </tr>
-              <tr>
-                <td scope="row">11-05-2022</td>
-                <td>Sosialisasi</td>
-                <td>Kegiatan Dinas</td>
-                <td>
-                    <a href="#" >
-                        <span class="iconify" data-icon="mdi:share" style="color: #00a86b;" data-width="30" data-height="30"></span>
-                    </a>
-                </td>
-              </tr>
-            </tbody>
-        </table>
-            <p class="m-0 p-0 grey-text">Menampilkan 5 dari 29</p>
-            <a href="#" class="mt-2">Load more..</a>
-        </div>
 
         <br><br><br><br>
 
