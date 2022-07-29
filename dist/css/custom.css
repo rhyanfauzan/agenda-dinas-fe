@@ -95,6 +95,45 @@
   transition-property: all;
 }
 
+.button-green {
+  background-color: #00a86b;
+  color: #fff;
+}
+
+.button-green:hover {
+  border-color: #fff;
+  background-color: #076945;
+  border: 1px solid #fff;
+  color: #fff;
+  transition-property: all;
+}
+
+.button-grey {
+  background-color: #d1d1d1;
+  color: #222222;
+}
+
+.button-grey:hover {
+  border-color: #fff;
+  background-color: #919191;
+  border: 1px solid #fff;
+  color: #222222;
+  transition-property: all;
+}
+
+.button-red {
+  background-color: #c32e2e;
+  color: #ffffff;
+}
+
+.button-red:hover {
+  border-color: #fff;
+  background-color: #ff8282;
+  border: 1px solid #fff;
+  color: #222222;
+  transition-property: all;
+}
+
 /* button  */
 
 .btn {
@@ -421,4 +460,24 @@ input#slideC:checked ~ .bullet-nav label#bulletC {
   color: #9dbfaf;
   width: 40px;
   height: 40px;
+}
+
+.li-active {
+  background-color: #eaeaea !important;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.li-active a,
+span {
+  color: #030f6b !important;
+}
+
+.li-active:hover {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.collapsible li:hover {
+  background-color: #eaeaea !important;
 }

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootsrap 5  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/iconpupr.png" />
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <title>Dashboard | Kegiatan DInas</title>
+    <!-- This page CSS -->
+    <link href="../../dist/css/icons/crypto-icons/cryptocoins.css" rel="stylesheet" />
+    <link href="../../dist/css/pages/data-table.css" rel="stylesheet" />
+    <link href="../../assets/extra-libs/c3/c3.min.css" rel="stylesheet" />
+    <link href="../../dist/css/style.css" rel="stylesheet" />
+    <link href="../../dist/css/pages/dashboard3.css" rel="stylesheet" />
+    <link href="../../dist/css/custom.css" rel="stylesheet" />
+
+  </head>
+  <body>
+    <div class="main-wrapper" id="main-wrapper">
+      <div class="preloader">
+        <div class="loader">
+          <div class="loader__figure"></div>
+          <p class="loader__label">Admin</p>
+        </div>
+      </div>
+      <header class="topbar">
+        <nav class="bg-color-white">
+          <div class="nav-wrapper ">
+            <a href="#" class="">
+              <span class="icon">
+                <img class="light-logo" src="../../assets/images/logopupr.png" alt="logo" height="40px"/>
+              </span>
+            </a>
+
+            <ul class="right">
+              <li class="lang-dropdown"></li>
+              <li>
+                <a class="dropdown-trigger" href="javascript: void(0);" data-target="user_dropdown"
+                  ><img src="../../assets/images/users/user.png" alt="user" class="circle profile-pic"
+                /></a>
+                <ul id="user_dropdown" class="mailbox dropdown-content dropdown-user">
+                  <li>
+                    <div class="dw-user-box">
+                      <div class="u-img"><img src="../../assets/images/users/3.png" alt="user" /></div>
+                      <div class="u-text">
+                        <h4>Ryan Fauzan</h4>
+                        <p>ryan@gmail.com</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li role="separator" class="divider"></li>
+                  <!-- <li>
+                    <a href="#"><i class="material-icons">account_circle</i> My Profile</a>
+                  </li> -->
+                  <li>
+                    <a href="#"><i class="material-icons">power_settings_new</i> Logout</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <!-- ============================================================== -->
+            <!-- Right topbar icon scss in header.scss -->
+            <!-- ============================================================== -->
+          </div>
+        </nav>
+      </header>
+      <aside class="left-sidebar">
+        <ul id="slide-out" class="sidenav">
+          <li class="side-wrap">
+            <ul class="collapsible">
+              <li class="small-cap"><span class="hide-menu"></span></li>
+                <li >
+                    <a href="index.html"
+                    ><span class="iconify mb-1 m-r-10" data-icon="mdi:view-dashboard"></span>Dashboard</a
+                    >
+                </li>
+                <li class="li-active">
+                    <a href="agenda-admin.html"
+                    ><span class="iconify mb-1 m-r-10" data-icon="mdi:calendar-check"></span></span>Kegiatan Dinas</a
+                    >
+                </li>
+                <li>
+                    <a href="permintaan-admin.html"
+                    ><span class="iconify mb-1 m-r-10" data-icon="mdi:file-arrow-left-right-outline"></span></span>Permintaan Data</a
+                    >
+                </li>
+                <li>
+                    <a href="pengelolaan-admin.html"
+                    ><span class="iconify mb-1 m-r-10" data-icon="mdi:clipboard-edit-outline"></span></span>Pengelolaan</a
+                    >
+                </li>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </aside>
+      <div class="page-wrapper">
+        <div class="d-flex my-5 justify-content-between">
+          <!-- Akan datang  -->
+          <h3 class="font-medium ">Kegiatan Dinas <span class="iconify" data-icon="mdi:calendar-check"></span></h3>
+
+          <!-- Button trigger modal -->
+          <button type="button" class="button button-green" data-icon="mdi:square-edit-outline" data-width="25" data-height="25" data-bs-toggle="modal" data-bs-target="#tambahdatamodal">
+            Tambah Data
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="tambahdatamodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel"><span class="iconify" data-icon="mdi:note-plus"></span> Tambah Data</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col">
+                      <form>
+                        <div class="mb-3">
+                          <input type="textarea" class="form-control" placeholder="Undangan dari siapa">
+                        </div>
+                        <div class="mb-3">
+                          <input type="textarea" class="form-control" placeholder="Tempat">
+                        </div>
+                        <div class="mb-3">
+                          <input type="textarea" class="form-control" placeholder="Perihal">
+                        </div>
+                        <div class="mb-3">
+                          <input type="textarea" class="form-control" placeholder="Disposisi">
+                        </div>
+                      </form>
+                    </div>
+                    <div class="col">
+                      <form>
+                        <div class="mb-3">
+                          <input type="date" class="form-control" placeholder="Tanggal">
+                        </div>
+                        <div class="mb-3">
+                          <input type="time" class="form-control" placeholder="Waktu">
+                        </div>
+                        <div class="mb-3">
+                          <input type="text" class="form-control" placeholder="Pesan Whatsapp" height="100px">
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="button button-grey" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="button button-green">Simpan</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid">
+          <table class="table table-hover table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">Undangan</th>
+                <th scope="col">Tanggal</th>
+                <th scope="col">Waktu</th>
+                <th scope="col">Tempat</th>
+                <th scope="col">Perihal</th>
+                <th scope="col">Disposisi</th>
+                <th scope="col">Share</th>
+                <th scope="col">Edit</th>
+                <th scope="col">Delete</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row">1</td>
+                <td>Pertemuan Pejabat Daerah</td>
+                <td>17-08-2022</td>
+                <td>09:00 AM</td>
+                <td>Aula</td>
+                <td>-</td>
+                <td>Koordinasi</td>
+                <td>
+                    <a href="#" >
+                        <span class="iconify" data-icon="mdi:whatsapp" style="color: #00a86b;" data-width="25" data-height="25"></span>
+                    </a>
+                </td>
+                <td>
+                  <!-- Button trigger modal -->
+                  <span type="button" class="iconify yellow-text" data-icon="mdi:square-edit-outline" data-width="25" data-height="25" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Edit
+                  </span>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="staticBackdropLabel">
+                            <span class="iconify" data-icon="mdi:pencil-box"></span> Edit</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="row">
+                            <div class="col">
+                              <form>
+                                <div class="mb-3">
+                                  <input type="textarea" class="form-control" placeholder="Undangan dari siapa">
+                                </div>
+                                <div class="mb-3">
+                                  <input type="textarea" class="form-control" placeholder="Tempat">
+                                </div>
+                                <div class="mb-3">
+                                  <input type="textarea" class="form-control" placeholder="Perihal">
+                                </div>
+                                <div class="mb-3">
+                                  <input type="textarea" class="form-control" placeholder="Disposisi">
+                                </div>
+                              </form>
+                            </div>
+                            <div class="col">
+                              <form>
+                                <div class="mb-3">
+                                  <input type="date" class="form-control" placeholder="Tanggal">
+                                </div>
+                                <div class="mb-3">
+                                  <input type="time" class="form-control" placeholder="Waktu">
+                                </div>
+                                <div class="mb-3">
+                                  <input type="text" class="form-control" placeholder="Pesan Whatsapp" height="100px">
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="button button-grey" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="button button-green">Simpan</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </td>
+              <td>
+                <!-- Button trigger modal -->
+                <span type="button" class="iconify red-text" data-icon="mdi:delete-outline" data-width="25" data-height="25" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Delete
+                </span>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                          <span class="iconify" data-icon="mdi:delete-circle-outline"></span> Warning!</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        apakah Anda yakin akan menghapus ini ?
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="button button-grey" data-bs-dismiss="modal">Batal</button>
+                        <button type="button" class="button button-red">Delete</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </td>
+              </tr>
+            </tbody>
+          </table>
+            <p class="m-0 p-0 grey-text">Menampilkan 3 dari 3</p>
+            <a href="#" class="mt-2">Load more..</a>
+
+        <br><br><br><br>
+
+        <footer class="center-align m-b-30 m-l-15 m-r-15">
+          Copyright New PU 2022.
+        </footer>
+      </div>
+
+    </div>
+    <!-- ============================================================== -->
+    <!-- All Required js -->
+    <!-- ============================================================== -->
+    <script src="../../assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="../../dist/js/materialize.min.js"></script>
+    <script src="../../assets/libs/perfect-scrollbar/dist/js/perfect-scrollbar.jquery.min.js"></script>
+    <!-- ============================================================== -->
+    <!-- Apps -->
+    <!-- ============================================================== -->
+    <script src="../../dist/js/app.js"></script>
+    <script src="../../dist/js/app.init.horizontal.js"></script>
+    <script src="../../dist/js/app-style-switcher.horizontal.js"></script>
+    <!-- ============================================================== -->
+    <!-- Custom js -->
+    <!-- ============================================================== -->
+    <script src="../../dist/js/custom.min.js"></script>
+    <!-- ============================================================== -->
+    <!-- This page plugin js -->
+    <!-- ============================================================== -->
+    <!--c3 JavaScript -->
+    <script src="../../assets/extra-libs/c3/d3.min.js"></script>
+    <script src="../../assets/extra-libs/c3/c3.min.js"></script>
+    <!-- <script src="../../assets/libs/datatables/media/js/jquery.dataTables.min.js"></script> -->
+    <script src="../../assets/extra-libs/DataTables/jquery.dataTables.min.js"></script>
+    <script src="../../dist/js/pages/dashboards/dashboard3.js"></script>
+    <script>
+      /****************************************
+       *       Basic Table                   *
+       ****************************************/
+      $("#zero_config").DataTable();
+    </script>
+  </body>
+</html>
